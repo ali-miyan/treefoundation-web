@@ -23,9 +23,9 @@
   justify-content: space-around;
 }
 
-.scroll-element img {
+/* .scroll-element img {
   width: 10%;
-}
+} */
 
 .primary {
   animation: primary 30s linear infinite;
