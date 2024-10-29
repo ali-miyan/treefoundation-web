@@ -4516,16 +4516,60 @@ screen and (max-height: 800px) {
 }
 
 .bg-img-10 {
-    background: url(../images/bg10.jpg);
+    position: relative; /* Make sure the parent element is positioned */
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
+}
+
+.bg-img-10::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the second value for darkness */
+    z-index: 1; /* Place overlay above the image but below content */
+}
+
+.bg-img-10 > * {
+    position: relative; /* Ensure child elements are above the overlay */
+    z-index: 2; /* Higher z-index than the overlay */
+}
+.bg-img-11 {
+    position: relative; /* Make sure the parent element is positioned */
+    overflow: hidden; /* Ensure the overlay doesn't overflow */
+}
+
+.bg-img-11::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the second value for darkness */
+    z-index: 1; /* Place overlay above the image but below content */
+}
+
+.bg-img-11 > * {
+    position: relative; /* Ensure child elements are above the overlay */
+    z-index: 2; /* Higher z-index than the overlay */
+}
+
+.bg-img-10 {
+    background: url(../gallery/33.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.bg-img-12 {
-    background: url(../images/bg12.png);
-    background-repeat: no-repeat;
+
+.bg-img-11 {
+    min-width: 100%;
+    background: url('https://d3b6u46udi9ohd.cloudfront.net/wp-content/uploads/2018/11/15073829/The-Link-Between-Old-Age-and-Mental-Health-Issues.jpg') no-repeat center center;
+    background-size: cover; /* This ensures the image covers the entire element */
 }
+
 
 .bg-img-13 {
     background: url(../images/bg13.jpg);
