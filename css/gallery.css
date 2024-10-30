@@ -4,7 +4,7 @@
     grid-auto-rows: 250px;
     gap: 20px;
     padding: 20px;
-    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    background-color:white;
   }
   
   /* Style for each image within the gallery */
