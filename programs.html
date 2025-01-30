@@ -123,6 +123,7 @@ field.`,
       <!-- Modified Header Section -->
       <nav
         class="navbar navbar-expand-lg navbar-light navbar-dark navbar-light-logo"
+        style="background-color: #006633;"
       >
         <div class="container">
           <a class="navbar-brand" href="index.html">
@@ -175,42 +176,56 @@ field.`,
       </nav>
       <!-- End Header -->
       <div
+  style="
+    width: 100%;
+    min-height: 100vh;
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  "
+>
+  <div
+    class="card"
+    style="
+      width: 90%;
+      max-width: 600px; /* Wider card on bigger screens */
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      overflow: hidden;
+      text-align: center;
+      margin: 5rem 0;
+    "
+  >
+    <div class="card-body" style="padding: 2rem">
+      <h5
+        class="dynamic-card-title"
         style="
-          width: 100%;
-          height: 100%;
-          background: #ebebeb;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+          color: #333;
+          word-wrap: break-word;
         "
       >
-        <div
-          class="card"
-          style="
-            width: 90%;
-            max-width: 18rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            overflow: hidden;
-            text-align: center;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-          "
-        >
-          <div class="card-body" style="padding: 1.5rem">
-            <h5
-              class="dynamic-card-title"
-              style="font-size: 1.25rem; margin-bottom: 0.75rem; color: #333"
-            ></h5>
-            <p
-              class="dynamic-card-text"
-              style="color: #666; font-size: 1rem"
-            ></p>
-          </div>
-        </div>
-      </div>
+        Dynamic Title
+      </h5>
+      <p
+        class="dynamic-card-text"
+        style="
+          color: #666;
+          font-size: 1.125rem;
+          word-wrap: break-word;
+        "
+      >
+        This is a responsive card that adjusts based on screen size.
+      </p>
+    </div>
+  </div>
+</div>
+
 
       <!-- Footer remains exactly the same -->
       <footer
